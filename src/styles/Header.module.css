@@ -1,0 +1,27 @@
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 65px;
+	background: var(--gradient);
+	color: #fff;
+}
+
+.header-left {
+	display: flex;
+	height: 26px;
+	align-items: center;
+	gap: 0.5rem;
+	margin-left: 2rem;
+	font-size: 0.75rem;
+}
+
+.header-left img {
+	height: 100%;
+}
+
+.header-right {
+	margin-right: 2rem;
+	color: #3d3d3d;
+	font-size: 0.75rem;
+}

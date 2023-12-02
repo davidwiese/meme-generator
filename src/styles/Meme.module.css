@@ -1,0 +1,36 @@
+main {
+	padding: 36px;
+}
+
+.form {
+	display: grid;
+	grid-template: 45px 45px / 1fr 1fr;
+	gap: 1em;
+}
+
+.form--label {
+	margin-bottom: 5px;
+}
+
+.form--input {
+	border-radius: 5px;
+	border: 1px solid #d5d4d8;
+	text-indent: 5px;
+	height: 35px;
+	width: 100%;
+}
+
+.form--button {
+	grid-column: 1 / -1;
+	border-radius: 5px;
+	color: white;
+	border: none;
+	cursor: pointer;
+	background: var(--gradient);
+	height: 35px;
+	margin-top: 10px;
+}
+
+.meme--img {
+	max-width: 100%;
+}
