@@ -31,6 +31,10 @@ main {
 	margin-top: 10px;
 }
 
+.meme {
+	margin-top: 1em;
+}
+
 .meme--img {
 	max-width: 100%;
 }
