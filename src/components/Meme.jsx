@@ -20,6 +20,14 @@ function Meme() {
 		}));
 	}
 
+	function handleChange(e) {
+		const { name, value } = e.target;
+		setMeme((prevMeme) => ({
+			...prevMeme,
+			[name]: value,
+		}));
+	}
+
 	return (
 		<>
 			<main>
@@ -27,17 +35,23 @@ function Meme() {
 					<div>
 						<label className={styles["form--label"]}>Top text</label>
 						<input
+							onChange={handleChange}
 							type="text"
 							className={styles["form--input"]}
 							placeholder="One does not simply"
+							name="topText"
+							value={meme.topText}
 						/>
 					</div>
 					<div>
 						<label className={styles["form--label"]}>Bottom text</label>
 						<input
+							onChange={handleChange}
 							type="text"
 							className={styles["form--input"]}
 							placeholder="walk into Mordor"
+							name="bottomText"
+							value={meme.bottomText}
 						/>
 					</div>
 					<button
@@ -49,11 +63,13 @@ function Meme() {
 					</button>
 				</div>
 				<div className={styles["meme"]}>
-					<img
-						src={meme.randomImage}
-						className={styles["meme--image"]}
-						alt=""
-					/>
+					<img src={meme.randomImage} className={styles["meme--image"]} />
+					<h2 className={`${styles["meme--text"]} ${styles["top"]}`}>
+						{meme.topText}
+					</h2>
+					<h2 className={`${styles["meme--text"]} ${styles["bottom"]}`}>
+						{meme.bottomText}
+					</h2>
 				</div>
 			</main>
 		</>
