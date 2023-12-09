@@ -18,7 +18,7 @@ function Meme() {
 	function getMemeImage() {
 		const randomNumber = Math.floor(Math.random() * allMemes.length);
 		const url = allMemes[randomNumber].url;
-		setMeme((prvMeme) => ({
+		setMeme((prevMeme) => ({
 			...prevMeme,
 			randomImage: url,
 		}));
