@@ -11,7 +11,7 @@ function Meme() {
 
 	useEffect(() => {
 		fetch("https://api.imgflip.com/get_memes")
-			.then((res) => res.json())
+			.then((rs) => res.json())
 			.then((data) => setAllMemes(data.data.memes));
 	}, []);
 
