@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 function Meme() {
 	const [meme, setMeme] = useState({
 		topText: "",
-		bottomText: "a",
+		bottomText: "",
 		randomImage: "http://i.imgflip.com/1bij.jpg",
 	});
 	const [allMemes, setAllMemes] = useState([]);
